@@ -1,0 +1,52 @@
+# Build directories
+build/
+cmake-build-*/
+out/
+
+# Compiled objects
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+
+# Executables
+minios
+test_scheduler
+test_memory
+test_filesystem
+test_ipc
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Logs
+*.log
+kernel.log
+
+# Debug files
+*.dSYM/
+core
+core.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Replit specific
+.cache/
+.upm/
+.config/

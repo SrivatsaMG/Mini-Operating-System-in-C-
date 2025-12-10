@@ -1,2 +1,30 @@
+modules = ["cpp-clang14"]
 [agent]
 expertMode = true
+
+[nix]
+channel = "stable-25_05"
+packages = ["cmake"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "MiniOS"
+
+[[workflows.workflow]]
+name = "MiniOS"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd build && cmake .. && make -j4 && ./minios"
+
+[workflows.workflow.metadata]
+outputType = "console"
