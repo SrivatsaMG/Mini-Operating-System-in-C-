@@ -1,0 +1,71 @@
+You are a senior Operating Systems engineer from Microsoft Windows Kernel team.
+
+Your task is to help me design and implement a Mini Microkernel-style Operating System in C++ for learning and resume purposes.
+
+Project Goals:
+- Written in modern C++ (C++17 or later)
+- Clean, modular, production-style architecture
+- Focus on OS fundamentals rather than UI
+- Code should be portable but Windows-friendly
+
+Core Features to Implement:
+
+1. Kernel Core
+- Microkernel architecture (minimal kernel, services in user space style)
+- Clear separation between kernel and services
+- Bootstrapping simulation (main kernel loop)
+
+2. Task Scheduling
+- Implement a Round-Robin scheduler first
+- Optional Priority-based scheduling
+- Task Control Block (TCB)
+- Context switching simulation
+- Time slicing using timer interrupts (simulated)
+
+3. Memory Management
+- Virtual memory simulation
+- Page tables and page frames
+- Page fault handling
+- Heap manager (malloc/free style)
+- Memory protection flags (read/write)
+
+4. File System
+- Simple in-memory file system
+- Directory and file abstraction
+- Create, read, write, delete operations
+- File descriptor table
+
+5. Device Drivers
+- Keyboard input driver (simulated)
+- Interrupt handling mechanism
+- Driver registration and dispatch system
+
+6. Inter-Process Communication (IPC)
+- Message passing between tasks
+- Synchronous and asynchronous messages
+- System call interface
+
+7. Debugging & Logging
+- Kernel logs
+- Task state visualization
+- Memory usage reporting
+
+Deliverables:
+- Project folder structure
+- UML / architecture explanation
+- Step-by-step implementation plan
+- Clean, commented C++ code for each module
+- README.md written like a real open-source project
+- Build instructions using CMake
+- Unit test strategy
+
+Constraints:
+- Do NOT use external OS libraries
+- Use STL only where appropriate
+- Code must be readable and well-documented
+- Prefer clarity over extreme optimization
+
+Start by:
+1. Explaining the overall microkernel architecture
+2. Providing the folder structure
+3. Implementing the kernel core and task scheduler first
